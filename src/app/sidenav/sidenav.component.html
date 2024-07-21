@@ -1,0 +1,93 @@
+<div class="container">
+    <div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+          <div class="logo-container">
+              <button class="logo "  (click)="toggleCollapse()"> |||</button>
+              <div class="logo-text" @fadeInOut >Angular</div>
+              
+          </div>
+          <ul>
+    
+            <li>
+              <a routerLink="dashboard" routerLinkActive="active" ariaCurrentWhenActive="page">
+                <span class="icon">
+                  <i class="bi bi-columns-gap"></i>
+                        </span>
+                        <span class="title" @fadeInOut >Dashboard</span>
+                    </a>
+                  </li>
+    
+                  <li>
+                      <a routerLink="supply" routerLinkActive="active" ariaCurrentWhenActive="page">
+                          <span class="icon">
+                            <i class="bi bi-person-vcard"></i>
+                          </span>
+                          <span class="title" @fadeInOut >Supply-chain</span>
+                      </a>
+                  </li>
+    
+                <li>
+                    <a routerLink="cows" routerLinkActive="active" ariaCurrentWhenActive="page">
+                        <span class="icon">
+                          <i class="bi bi-unity"></i>
+                        </span>
+                        <span class="title" @fadeInOut >species of Cows</span>
+                    </a>
+                </li>
+                
+                <!-- <li>
+                  <a routerLink="home" routerLinkActive="active" ariaCurrentWhenActive="page">
+                      <span class="icon">
+                        <i class="bi bi-unity"></i>
+                      </span>
+                      <span class="title" @fadeInOut >Home</span>
+                  </a>
+              </li> -->
+<!--     
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                          <i class="bi bi-list-ul"></i>
+                        </span>
+                        <span class="title" @fadeInOut >Messages</span>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                          <i class="bi bi-plug"></i>
+                        </span>
+                        <span class="title" @fadeInOut >Help</span>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                          <i class="bi bi-speedometer2"></i>
+                        </span>
+                        <span class="title" @fadeInOut >Settings</span>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                          <i class="bi bi-usb-plug"></i>
+                        </span>
+                        <span class="title" @fadeInOut >Password</span>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                          <i class="bi bi-house-door"></i>
+                        </span>
+                        <span class="title" @fadeInOut >Sign Out</span>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+      </div>
+    

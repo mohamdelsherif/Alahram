@@ -1,0 +1,159 @@
+<div class="grid nested-grid">
+    <div class="col-8">
+        <div class="grid">
+            <div class="col-12">
+                <div class="text-center  border-round-sm  font-bold">
+                    <div class="surface-card shadow-2 p-3 border-round">
+                        <div class="flex justify-content-between mb-3">
+                            <div >
+                                <h2 class="block text-green-900 font-medium mb-3" >Walcome pro !</h2>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label font-medium" for="flexCheckDefault" style="color: #043912;">
+                                        Now there was 80% of feed1
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                    <label class="form-check-label font-medium" for="flexCheckChecked" style="color: #CC0909;">
+                                        There is a shortage of feed in the store !
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label font-medium" for="flexCheckDefault" style="color: #0ACF3E;">
+                                        The Store has been filled with feed (80%)
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                    <label class="form-check-label font-medium" for="flexCheckChecked" style="color: #CC0909;">
+                                        Lack of feed5!
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label font-medium" for="flexCheckDefault" style="color: #043912;">
+                                        Now there was 50% of feed6
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                    <label class="form-check-label font-medium" for="flexCheckChecked" style="color: #043912;">
+                                        The feed5 is on shipping tracking
+                                    </label>
+                                  </div>
+                            </div>
+                            <!-- <div class="text-end p-3 border-round-sm font-bold">
+                                <img  src="../../assets/business_growthamico_1_x2.svg">
+                            </div> -->
+                            <div class="flex justify-content-between mb-3">
+                                <div>
+                                </div>
+                                <img  src="../../assets/business_growthamico_1_x2.svg">
+                                <!-- <p-dropdown 
+                                [options]="cities" 
+                                [(ngModel)]="Items" 
+                                optionLabel="name" 
+                                placeholder="Items" 
+                                styleClass="width:100px:"/> -->
+                                <select class="form-select" (change)="changeData($event)" aria-label="Default select example">
+                                  <option  selected>Open this select menu</option>
+                                  <option  [value]="data"*ngfor="let data of Data" >{{data}} </option>
+                                  
+                                </select>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="text-center border-round-sm h-full font-bold">
+            <div class="surface-card shadow-2 p-3 border-round">
+                <app-commodities></app-commodities>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="grid">
+  <div class="col-4">
+      <div class="text-center  border-round-sm font-bold">
+        <div class="surface-card p-3 border-round">
+          <div clas="card-header">
+            <div class="flex-auto " >
+              <label for="buttondisplay" class="font-bold block mb-2"> <p style=" font-size: x-large;"><i class="bi bi-chevron-compact-left"></i> march 2023 <i class="bi bi-chevron-compact-right"></i></p> </label>
+              <span class="text-500">Your weekly average is <h5 style="color: #043912;">$100</h5></span> 
+          </div>
+          </div>
+          <div class="card-body">
+            <app-cost></app-cost>
+          </div>
+          <div class="card-footer">
+              <ul class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-center"style="color: #BA5F0B;" >
+                    Today
+                    <span class="badge rounded-pill" style="color: #BA5F0B;">$50.00</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Yesterday
+                    <span class="badge  text-green-800 rounded-pill">$90.00</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Average
+                    <span class="badge text-green-800 rounded-pill">$65.00</span>
+                  </li>
+                </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="col-4 ">
+      <div class="text-center  border-round-sm  font-bold">
+        <div class="surface-card shadow-2 p-3  border-round">
+          <div clas="card-header">
+              <h5>Cows</h5>
+            <h4>
+              Monthly Income 16,5000
+            </h4>
+          </div>
+          <div class="card-body">
+            <app-cows></app-cows>
+          </div>
+          
+          <div class="card-footer">
+             <div>
+              <h4 class="text-green-700 font-medium">$15.305,000</h4>
+              <h4 class="text-900">Total Money</h4>
+             </div>
+          </div>
+      </div>
+      </div>
+  </div>
+  <div class="col-4 ">
+    <div class="text-center  border-round-sm  font-bold">
+      <div class="surface-card shadow-2 p-3 border-round">
+        <div clas="card-header">
+            <h5>Suppliers</h5>
+          <span class="text-500">storage Capacity <h5 style="color: #043912;">$50.000,000 </h5></span>
+        </div>
+        <div class="card-body">
+          <app-supplier></app-supplier>
+        </div>  
+    </div>
+    </div>
+</div>
+</div>

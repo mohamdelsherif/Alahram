@@ -1,0 +1,34 @@
+<div class="card">
+    <p-table [value]="data"
+    [resizableColumns]="true" 
+    columnResizeMode="expand" 
+    styleClass="p-datatable-striped" 
+     [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+            <tr style="color: #043912;">
+                <th  style="color: #043912;">Barn</th>
+                <th  style="color: #043912;">Number of cows</th>
+                <th  style="color: #043912;">Rate of growth</th>
+                <th  style="color: #043912;">Rate of consumption</th>
+                <th  style="color: #043912;">Issues</th>
+                <th  style="color: #043912;">Grade</th>
+                <th  style="color: #043912;">Type</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+            <tr>
+                <td style="color: #19C747;">
+                   
+                    <button mat-button (click)="openDialog()"style="color: #19C747;"> {{ product.barnId }}</button>
+
+                </td>
+                <td>{{ product.numOfCow}}</td>
+                <td>{{ product.rateOfGrowth}}</td>
+                <td>{{ product.rateOfConsumption}}</td>
+                <td>{{ product.issues}}</td>
+                <td>{{ product. grade}}</td>
+                <td>{{ product.typeName}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>

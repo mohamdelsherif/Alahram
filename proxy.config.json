@@ -1,0 +1,7 @@
+{
+    "/api/*" :{
+        "target":"http://ue-dt.somee.com",
+        "secure": false,
+        "loglevel" :"debug"
+    }
+}
